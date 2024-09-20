@@ -1,0 +1,10 @@
+const express = require ('express');
+const router = express.Router();
+const MainController = require('../controller/MainController');
+
+router.get('/', MainController.index);
+router.get('/about', MainController.about);
+router.get('/contact', MainController.contact);
+router.get('/address', MainController.address);
+router.get('/pogi', MainController.pogi);
+module.exports = router;
